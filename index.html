@@ -1,70 +1,106 @@
-<!DOCTYPE html>
 <html>
 <head>
-<link rel="Stylesheet" type="text/css" href="style.css">
-<title>index</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" type="text/css" href="css/style.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="http://www.vim.org/images/vim_shortcut.ico">
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- Bootstrap or materialize -->
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-S7YMK1xjUjSpEnF4P8hPUcgjXYLZKK3fQW1j5ObLSl787II9p8RO9XUGehRmKsxd" crossorigin="anonymous"> -->
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" >
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"> -->
+
+	<!-- Roboto Font -->
+	<link href='css/roboto.css' rel='stylesheet' type='text/css'>
+
+	<!-- Code Prettify -->
+	<script async src="js/code-prettify.js"></script>
+
+	<!-- Some CSS, for removing Code prettify borders -->
+	<style>
+
+
+		pre.prettyprint {
+			border: none !important;
+			padding : 0.3px !important;
+			color : white !important;
+			background-color: #222222 !important;
+		}
+
+		div > pre > p {
+			display : none !important;
+		}
+		div > pre > span {
+			display : none !important;
+		}
+
+		body {
+			font-family: Roboto Condensed, sans-serif !important; 
+		}
+
+	</style>
 </head>
 <body>
 
-<div id="wikis"><h1 id="wikis" class="header"><a href="#wikis">wikis</a></h1></div>
-<p>
-<a href="work.html">work</a>
-</p>
+	<nav class="navbar navbar-inverse">
+			<ul class="nav navbar-nav">
+				<li><a class ="title" href="#">Vim Wiki</a></li>
+				<li><a class = "nav-item"href="index.html">Index</a></li>
+				<li><a class = "nav-item"href="work.html">Work</a></li>
+				<li><a class = "nav-item"href="diary/diary.html">Diary</a></li>
+				<li><a class = "nav-item"href="todo:all.html">Todo</a></li>
+			</ul>
+		</div>
+	</nav>
 
-<p>
-<a href="vimwiki.html">vimwiki</a>
+
+    <div class="container">
+		
+<div id="Generated Links"><h1 id="Generated Links" class="header"><a href="#Generated Links">Generated Links</a></h1></div>
+<ul>
+<li>
+<a href="MES.html">MES</a>
+
+<li>
+<a href="SCADA.html">SCADA</a>
+
+<li>
+<a href="definitions.html">definitions</a>
+
+<li>
+<a href="diary/diary.html">diary/diary</a>
+
+<li>
+<a href="glossary.html">glossary</a>
+
+<li>
+<a href="historian.html">historian</a>
+
+<li>
+<a href="index.html">index</a>
+
+<li>
+<a href="intouch.html">intouch</a>
+
+<li>
+<a href="quickscript.html">quickscript</a>
+
+<li>
 <a href="todo:all.html">todo:all</a>
-<a href="diary.html">diary</a>
-</p>
-<div id="urgent | +urgent +PENDING"><h1 id="urgent | +urgent +PENDING" class="header"><a href="#urgent | +urgent +PENDING">urgent | +urgent +PENDING</a></h1></div>
-<div id="medium | +medium +PENDING"><h1 id="medium | +medium +PENDING" class="header"><a href="#medium | +medium +PENDING">medium | +medium +PENDING</a></h1></div>
-<ul>
-<li class="done0">
-active directory / windows security  #80bc64d5
+
+<li>
+<a href="todo:done.html">todo:done</a>
+
+<li>
+<a href="vimwiki.html">vimwiki</a>
+
+<li>
+<a href="work.html">work</a>
 
 </ul>
-<div id="small | +small"><h1 id="small | +small" class="header"><a href="#small | +small">small | +small</a></h1></div>
-<ul>
-<li class="done0">
-hur propagera / pusha utan att locka hela chainen?  #f295bf90
 
-<li class="done0">
-OMI/Operational Management Interface vs intouch  #7e6e5224
+    </div>
 
-<li class="done0">
-diobjects  #fc579060
-
-<ul>
-<li class="done0">
-sequencers  #4e5d0bc1
-
-<li class="done0">
-sqldata  #d520ad61
-
-</ul>
-<li class="done0">
-protocols  #6e786080
-
-<ul>
-<li class="done0">
-OPC  #184cb5f9
-
-<ul>
-<li class="done0">
-DA / Data Access?  #e688ee64
-
-<li class="done0">
-UA  #93f17551
-
-</ul>
-<li class="done0">
-MQTT  #8c30ef8c
-
-</ul>
-</ul>
-<div id="linux | +linux +PENDING"><h1 id="linux | +linux +PENDING" class="header"><a href="#linux | +linux +PENDING">linux | +linux +PENDING</a></h1></div>
 
 </body>
 </html>

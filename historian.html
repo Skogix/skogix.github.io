@@ -1,13 +1,61 @@
-<!DOCTYPE html>
 <html>
 <head>
-<link rel="Stylesheet" type="text/css" href="style.css">
-<title>historian</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" type="text/css" href="css/style.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="http://www.vim.org/images/vim_shortcut.ico">
+    <title>historian</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- Bootstrap or materialize -->
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-S7YMK1xjUjSpEnF4P8hPUcgjXYLZKK3fQW1j5ObLSl787II9p8RO9XUGehRmKsxd" crossorigin="anonymous"> -->
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" >
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"> -->
+
+	<!-- Roboto Font -->
+	<link href='css/roboto.css' rel='stylesheet' type='text/css'>
+
+	<!-- Code Prettify -->
+	<script async src="js/code-prettify.js"></script>
+
+	<!-- Some CSS, for removing Code prettify borders -->
+	<style>
+
+
+		pre.prettyprint {
+			border: none !important;
+			padding : 0.3px !important;
+			color : white !important;
+			background-color: #222222 !important;
+		}
+
+		div > pre > p {
+			display : none !important;
+		}
+		div > pre > span {
+			display : none !important;
+		}
+
+		body {
+			font-family: Roboto Condensed, sans-serif !important; 
+		}
+
+	</style>
 </head>
 <body>
 
+	<nav class="navbar navbar-inverse">
+			<ul class="nav navbar-nav">
+				<li><a class ="title" href="#">Vim Wiki</a></li>
+				<li><a class = "nav-item"href="index.html">Index</a></li>
+				<li><a class = "nav-item"href="work.html">Work</a></li>
+				<li><a class = "nav-item"href="diary/diary.html">Diary</a></li>
+				<li><a class = "nav-item"href="todo:all.html">Todo</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+    <div class="container">
+		
 <div id="historian"><h1 id="historian" class="header"><a href="#historian">historian</a></h1></div>
 <div id="historian-documentation"><h2 id="documentation" class="header"><a href="#historian-documentation">documentation</a></h2></div>
 <ol>
@@ -2690,7 +2738,7 @@ then calling invokeEventEx()
 <dd>() -&gt; int</dd>
 </dl>
 
-<div id="historian-databases"><h2 id="databases" class="header"><a href="#historian-databases">databases</a></h2></div>
+<div id="historian-common databases"><h2 id="common databases" class="header"><a href="#historian-common databases">common databases</a></h2></div>
 <table>
 <tr>
 <th>
@@ -2884,20 +2932,46 @@ alternate
 </ol>
 
 <div id="historian-maintenance-backup"><h3 id="backup" class="header"><a href="#historian-maintenance-backup">backup</a></h3></div>
+<p>
+can perform backups using windows backup
+to copy a subset, use <a href="glossary.html">SP</a> xp_DiskCopy
+</p>
+<div id="historian-maintenance-historian databases"><h3 id="historian databases" class="header"><a href="#historian-maintenance-historian databases">historian databases</a></h3></div>
+<table>
+<tr>
+<td>
+runtime
+</td>
+<td>
+active
+</td>
+</tr>
+<tr>
+<td>
+holding
+</td>
+<td>
+temp storage for topic / config from an intouch node
+</td>
+</tr>
+<tr>
+<td>
+A2ALMDB
+</td>
+<td>
+alarm/events from application server (legacy). (event subsystem on runtime)
+</td>
+</tr>
+</table>
 
-<div id="todo | +PENDING +work +historian"><h1 id="todo | +PENDING +work +historian" class="header"><a href="#todo | +PENDING +work +historian">todo | +PENDING +work +historian</a></h1></div>
+<div id="todo | project:historian +PENDING"><h1 id="todo | project:historian +PENDING" class="header"><a href="#todo | project:historian +PENDING">todo | project:historian +PENDING</a></h1></div>
 <ul>
-<li class="done2">
-Historian  #8e9244e6
-
-<ul>
-<li class="done0">
-transact sql  #a03d9465
-
 <li class="done0">
 Historian Sub  #f9993adc
 
-</ul>
+<li class="done0">
+transact sql  #a03d9465
+
 <li class="done0">
 infucios ECS  #bbf23b33
 
@@ -2915,13 +2989,13 @@ configure events;admin:p311  #50187bf6
 
 <ul>
 <li class="done0">
-sqlbased p302  #9f859776
-
-<li class="done0">
 schedule p303  #20145ac4
 
 <li class="done0">
 external p304  #5a8f0c4d
+
+<li class="done0">
+sqlbased p302  #9f859776
 
 </ul>
 <li class="done0">
@@ -2931,6 +3005,9 @@ double check edge detection  #23bfc424
 application server; sequencer  #384527c7
 
 </ul>
+
+    </div>
+
 
 </body>
 </html>
