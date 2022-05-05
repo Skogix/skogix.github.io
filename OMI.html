@@ -1,0 +1,222 @@
+<html>
+<head>
+    <link rel="Stylesheet" type="text/css" href="css/style.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="http://www.vim.org/images/vim_shortcut.ico">
+    <title>OMI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- Bootstrap or materialize -->
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-S7YMK1xjUjSpEnF4P8hPUcgjXYLZKK3fQW1j5ObLSl787II9p8RO9XUGehRmKsxd" crossorigin="anonymous"> -->
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" >
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"> -->
+
+	<!-- Roboto Font -->
+	<link href='css/roboto.css' rel='stylesheet' type='text/css'>
+
+	<!-- Code Prettify -->
+	<script async src="js/code-prettify.js"></script>
+
+	<!-- Some CSS, for removing Code prettify borders -->
+	<style>
+
+
+		pre.prettyprint {
+			border: none !important;
+			padding : 0.3px !important;
+			color : white !important;
+			background-color: #222222 !important;
+		}
+
+		div > pre > p {
+			display : none !important;
+		}
+		div > pre > span {
+			display : none !important;
+		}
+
+		body {
+			font-family: Roboto Condensed, sans-serif !important; 
+		}
+
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+			<ul class="nav navbar-nav">
+				<li><a class ="title" href="#">Vim Wiki</a></li>
+				<li><a class = "nav-item"href="index.html">Index</a></li>
+				<li><a class = "nav-item"href="work.html">Work</a></li>
+				<li><a class = "nav-item"href="diary/diary.html">Diary</a></li>
+				<li><a class = "nav-item"href="todo:all.html">Todo</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+    <div class="container">
+		
+<div id="OMI"><h1 id="OMI" class="header"><a href="#OMI">OMI</a></h1></div>
+
+<ul>
+<li>
+general
+
+<ul>
+<li>
+<a href="glossary.html">OMI</a> extras compared to intouch:
+
+<ul>
+<li>
+screen profiles; determines <em>where</em>, meaning on which display screen
+
+<li>
+layouts; define <em>how</em> you want to organize content
+
+<li>
+archestra applications; are prebuilt, special-purpose collections of one or more controls
+
+</ul>
+<li>
+an <a href="glossary.html">OMI</a> app is called an ViewApp
+
+<li>
+provides multi-monitor setups
+
+<li>
+is provided as a part of Application Server and is not exclusive with intouch
+
+<li>
+is launched through application manager
+
+</ul>
+<li>
+features
+
+<ul>
+<li>
+built-in navigation; that enables users to browser for and display graphics in a running ViewApp. Based on the plant model of the galaxy, but can be customized
+
+<li>
+integrated security; that is integrated with the galaxy
+
+<li>
+single sign-on service; also integrated with the galaxy
+
+<li>
+native support for archestra symbols; that is, you can use archestra symbols in your ViewApp
+
+<li>
+faceplates; symbols enabled for faceplate compatibilty mode allow users to manage similar symbols using a single symbol
+
+<li>
+touch and multitouch gestures; pan, zoom, swipe, close and so on.
+
+<li>
+resolution independence; eliminates the need to configure the display resolution
+
+<li>
+software developer kit; lets you build custom applications. Uses dotnet
+
+</ul>
+<li>
+screen profiles, layouts and panes
+
+<ul>
+<li>
+screen profiles:
+
+<ul>
+<li>
+defines the physical characteristics of one+ client workspace monitor, including screen arrangement
+
+</ul>
+<li>
+layout:
+
+<ul>
+<li>
+one+ rectangular area of content for a screen. shows runtime information. every rectangular area is called a pane.
+
+</ul>
+<li>
+pane:
+
+<ul>
+<li>
+a sub-area of a layout that serves as a view-container. can include items like navigation trees, other layouts and so on.
+
+</ul>
+</ul>
+<li>
+archestra apps
+
+<ul>
+<li>
+an archestra app in a collection of one+ controls and is primarily developed with WPF (winform/html5 is also available)
+
+<li>
+<a href="glossary.html">AA</a> apps can be used as content in a pane
+
+<li>
+included apps:
+
+<ul>
+<li>
+<span id="OMI-AlarmApp"></span><strong id="AlarmApp">AlarmApp</strong> shows current and historical alarms
+
+<li>
+<span id="OMI-ContentPresenterApp"></span><strong id="ContentPresenterApp">ContentPresenterApp</strong> shows graphic items from one or more navigation items
+
+<li>
+<span id="OMI-HamburgerApp"></span><strong id="HamburgerApp">HamburgerApp</strong> controls the movement of a selected slide-in layout pane. three horizontal panes
+
+<li>
+<span id="OMI-HistoricalTrendApp"></span><strong id="HistoricalTrendApp">HistoricalTrendApp</strong> plots historian data to a trend chart.
+
+<li>
+<span id="OMI-InSightApp"></span><strong id="InSightApp">InSightApp</strong> shows historical operational data from historian
+
+<li>
+<span id="OMI-MapApp"></span><strong id="MapApp">MapApp</strong> shows geo-data on a map
+
+<li>
+<span id="OMI-NavigationApp"></span><strong id="NavigationApp">NavigationApp</strong> sets the current navigation item. it includes:
+
+<ul>
+<li>
+<span id="OMI-NavBreadcrumbControl"></span><strong id="NavBreadcrumbControl">NavBreadcrumbControl</strong> shows the user-selected sequential path
+
+<li>
+<span id="OMI-NavigationTree"></span><strong id="NavigationTree">NavigationTree</strong> shows the hierarchical organization of items
+
+</ul>
+<li>
+<span id="OMI-TitleBarApp"></span><strong id="TitleBarApp">TitleBarApp</strong> provides functional components to the title bar (home, login, language, keyboard)
+
+<li>
+<span id="OMI-WWWebAppControls"></span><strong id="WWWebAppControls">WWWebAppControls</strong>:
+
+<ul>
+<li>
+<span id="OMI-SharePoint"></span><strong id="SharePoint">SharePoint</strong> integrates sharepoint and is primarily used as document management
+
+<li>
+<span id="OMI-WebBrowser"></span><strong id="WebBrowser">WebBrowser</strong> is a fully featured web browser.
+
+</ul>
+</ul>
+</ul>
+</ul>
+<div id="OMI-todo | project:omi"><h2 id="todo | project:omi" class="header"><a href="#OMI-todo | project:omi">todo | project:omi</a></h2></div>
+<ul>
+<li class="done0">
+faceplates  #2108d28c
+
+</ul>
+
+    </div>
+
+
+</body>
+</html>
